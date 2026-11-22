@@ -1,0 +1,38 @@
+{
+  "$schema": "file:///D:/projects/json-schemas/prettierrc.json",
+
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "semi": true,
+  "singleAttributePerLine": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+
+  "plugins": [
+    "prettier-plugin-pkg"
+  ],
+
+  "overrides": [
+    {
+      "files": [
+        ".prettierrc.json",
+        "examples/**/tsconfig.json",
+        "tsconfig.app.json",
+        "tsconfig.node.json",
+        "tsdown.config.ts"
+      ],
+      "options": {
+        "printWidth": 35
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "file:///D:/projects/json-schemas/tsconfig.json",
+
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+
+  "include": ["src"]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "file:///D:/projects/json-schemas/package.json",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "@jeniex/paint-console": "workspace:*"
+  }
+}

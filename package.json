@@ -1,23 +1,55 @@
 {
-    "name": "paint-console",
-    "version": "0.0.1",
-    "description": "Simple colorable log. Support inspect objects and single line update",
-    "keywords": [
-        "color",
-        "console",
-        "log",
-        "paint",
-        "repaint",
-        "logging"
-    ],
-    "author": "Maxim Borodin <borodinmk@gmail.com>",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/borodin/paint-console"
-    },
-    "bugs": {
-        "url": "https://github.com/borodin/paint-console/issues"
-    },
-    "licence": "MIT"
+  "$schema": "file:///D:/projects/json-schemas/package.json",
+  "name": "@jeniex/paint-console",
+  "version": "0.0.2",
+  "type": "module",
+  "description": "Simple colorable log. Support inspect objects and single line update",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/borodin/paint-console"
+  },
+  "bugs": {
+    "url": "https://github.com/borodin/paint-console/issues"
+  },
+  "author": "Maxim Borodin <borodinmk@gmail.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "color",
+    "console",
+    "log",
+    "paint",
+    "repaint",
+    "logging"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "example:import:start": "pnpm --dir examples/import start",
+    "example:require:start": "pnpm --dir examples/require start",
+    "typecheck": "tsc -p tsconfig.node.json & tsc -p tsconfig.app.json"
+  },
+  "devDependencies": {
+    "@jeniex/inspect": "^1.0.0",
+    "@types/node": "^26.6.6",
+    "prettier": "^3.10.1",
+    "prettier-plugin-pkg": "^0.22.1",
+    "tsdown": "^0.23.7",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3"
+  }
 }

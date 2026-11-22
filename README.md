@@ -1,21 +1,33 @@
 # paint-console
+
 This package just repaint console.
 
 ### Installation
-``` npm install paint-console```
+
+`pnpm install -D @jeniex/paint-console`
 
 ### Usage
+
 ```javascript
-require('paint-console');
+import '@jeniex/paint-console';
 
-console.info('console.info();');
-console.warn('console.warn();');
-console.error('console.error();');
-console.log('console.log();');
-
+console.info('An info message');
+console.warn('A warn message');
+console.error('An error message');
 ```
+
+```javascript
+require('@jeniex/paint-console');
+
+console.info('An info message');
+console.warn('A warn message');
+console.error('An error message');
+```
+
 ### Demo
-![demo.png](http://i.imgur.com/ewxotFF.png)
+
+![demo.png](./assets/demo.png)
 
 ### Source
-[view source](https://github.com/Borodin/paint-console/blob/master/index.js)
+
+[view source](https://github.com/JenieX/paint-console/blob/master/src/index.ts)
