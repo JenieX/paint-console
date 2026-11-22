@@ -1,9 +1,5 @@
 const { stdout } = process;
 
-// const consoleInfo = console.info;
-// const consoleWarn = console.warn;
-// const consoleError = console.error;
-
 const originalConsole = {
   ...console,
 };
